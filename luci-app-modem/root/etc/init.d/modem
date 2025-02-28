@@ -177,9 +177,9 @@ quectel_cm()
 	procd_close_instance
 
 	# 启动网络接口
-	ifup usb0
+	ifup eth0
 	# 设置网路桥接
-	set_interface  "${modem_no}" usb0
+	set_interface  "${modem_no}" eth0
 }
 
 #设置网络接口（Modem Manager）
